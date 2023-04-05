@@ -1,0 +1,180 @@
+body {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  }
+
+h1, h2, h3, h4,h6 {
+  font-weight: 800;
+}
+
+h2{
+  letter-spacing: .3rem;
+  }
+
+h5{
+    font-weight: 700
+}
+
+p {
+font-family: 'Ubuntu', sans-serif;
+  color: #355070;
+  font-size: 1.2rem;
+}
+
+/* Heading  */
+.big-heading {
+  letter-spacing: .5rem;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+@-webkit-keyframes big-heading {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  padding-top: 3%;
+}
+
+/* Section */
+.color-section {
+  background-color: #355070;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #A9E4D7;
+  color: black;
+
+}
+/* containers */
+/* CONTAINER-FLUID will help us to avoid letters jumping when the screen is gettin small or larger. We took all the fisrt secction inside this container */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Navigation bar */
+.navbar {
+  padding-bottom: 4.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+
+/* Tittle section */
+#tittle .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: center;
+}
+
+.profile-pic{
+  padding-bottom: 3%;
+  width: 30%;
+  height: 30%;
+  }
+
+
+/* Features section */
+#about-me {
+  position: relative;
+}
+
+.features-h3 {
+  font-size: 1.5rem;
+}
+
+.icon-features {
+  color: #355070;
+  margin-bottom: 1rem;
+}
+
+.icon-features:hover {
+  color: #355070;
+}
+
+.icon-div {
+  padding: 12px 21px 12px;
+}
+
+/* Portfolio */
+.card-tittle{
+  color: #63B4B8;
+}
+
+.car-btn{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#portfolio .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Contact */
+
+#contact .container-fluid{
+  padding: 4% 15%;
+}
+
+.contact-text{
+  color: 00000;
+  letter-spacing: .5rem;
+  padding-bottom: 3%;
+}
+
+.contact-btn{
+  color:  #355070;
+}
+
+/* Footer */
+
+#footer {
+  font-size: 1.5rem;
+  padding-top: 1%;
+}
+
+.a-footer{
+  color: #FFF;
+  text-decoration: none;
+  padding: 1% 1%;
+}
+
+
+.a-footer:hover{
+  color: #D5D5D5;
+  text-decoration-line: underline;
+}
+
+/* overriding the next two items - original code is 0n bootstrap*/
+
+.btn-outline-dark:hover {
+  background-color: #355070;
+  border-color: #355070;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}

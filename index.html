@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mariana Pulgarin</title>
+
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;300;400&family=Pacifico&family=Raleway+Dots&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome kit no CDN, no sure if will work -->
+  <script src="https://kit.fontawesome.com/ef9821e07e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section class="color-section" id="tittle">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-flex center">
+      <a class="navbar-brand flex-grow-1 ps-2" href=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- inline style overriding Bootstrap default flex-grow:1 -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="flex-grow:0">
+        <ul class="navbar-nav d-flex justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/mardudpul">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="container-fluid">
+      <div id="home">
+        <img class="profile-pic" src="images.projects/Mariana.png" alt="profile-pic">
+        <h1 class="big-heading">Hello, I'm Mariana</h1>
+      </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="about-me">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-4 text-center icon-div">
+          <i class="icon-features fas fa-5x fa-users"></i>
+          <h3 class="features-h3">Great communicator</h3>
+          <p>I follow directions and commnicate well with managament and clients</p>
+        </div>
+        <div class="col-lg-4 text-center icon-div">
+          <i class="icon-features fas fa-5x fa-palette"></i>
+          
+          <h3 class="features-h3">Creative</h3>
+          <p>I enjoy creating desings and making colors look good together</p>
+        </div>
+        <div class="col-lg-4 text-center icon-div">
+          <i class="icon-features fas fa-5x fa-sticky-note"></i>
+          <h3 class="features-h3">Detail-Oriented</h3>
+          <p>I pay attention to details and like organized environment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+
+  <section class="color-section" id="portfolio">
+    <h2 class="section-heading">Portfolio</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <div class="card" style="width: 50rem;">
+            <img src="Screenshots-portafolio/wrord-press-homepage.PNG" class="card-img-top" alt="Home page wordpress">
+            <div class="card-body">
+              <h5 class="card-title" style="color:black">Mar-Swim Swimming Lessons</h5>
+              <p class="card-text">Web page design with Wordpress</p>
+              <!-- <a href="#" class="btn btn-outline-dark">Screenshots Link</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <div class="card" style="width: 50rem;">
+            <img src="Screenshots-portafolio\Order-summary-card.PNG" class="card-img-top" alt="Home page wordpress">
+            <div class="card-body">
+              <h5 class="card-title" style="color:black">Order summary card</h5>
+              <p class="card-text">Project for FrontMentor challenge with HTML and CSS</p>
+              <a href="https://mardudpul.github.io/order-summary-card/" class="car-btn btn btn-outline-dark">Page Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <div class="card" style="width: 50rem;">
+            <img src="Screenshots-portafolio\Three-column-card-project.PNG" class="card-img-top" alt="Home page wordpress">
+            <div class="card-body">
+              <h5 class="card-title" style="color:black">Three Column Card</h5>
+              <p class="card-text">Project for FrontMentor challenge with HTML, CSS & Bootstrap</p>
+              <a href="https://mardudpul.github.io/3-column-card/" class="car-btn btn btn-outline-dark">Page Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <div class="card" style="width: 50rem;">
+            <img src="Screenshots-portafolio\My-site-website.PNG" class="card-img-top" alt="Home page wordpress">
+            <div class="card-body">
+              <h5 class="card-title" style="color:black">My site</h5>
+              <p class="card-text">Project for Udemy class with HTML & CSS</p>
+              <a href="https://mardudpul.github.io/CSS-my-site/" class="car-btn btn btn-outline-dark">Page Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <div class="card" style="width: 50rem;">
+            <img src="Screenshots-portafolio\TingDog website.PNG" class="card-img-top" alt="Home page wordpress">
+            <div class="card-body">
+              <h5 class="card-title" style="color:black">TinDog</h5>
+              <p class="card-text">Project for Udemy class with HTML, CSS & Bootstrap</p>
+              <a href="https://mardudpul.github.io/TinDog-Start-master/" class="car-btn btn btn-outline-dark">Page Link</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+
+  <section class="white-section" id="contact">
+    <div class="container-fluid">
+      <h3 class="contact-text">I would love to hear from you!</h3>
+      <a style="font-family:'Montserrat-Light', sans-serif;" class="btn btn-outline-dark btn-contact" href="mailto:marpulgarind@email.com">Contact</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="color-section" id="footer" style="font-size:1.2rem; padding: 2rem 0;">
+    <div>
+      <a class="a-footer" href="#home">Home</a>
+      <span>·</span>
+      <a class="a-footer" href="#about-me">About me</a>
+      <span>·</span>
+      <a class="a-footer" href="#portfolio">Portfolio</a>
+      <span>·</span>
+      <a class="a-footer" href="https://github.com/mardudpul">GitHub</a>
+    </div>
+    2022 Mariana Pulgarin <sup>®</sup>
+  </footer>
+
+
+</body>
+
+</html>

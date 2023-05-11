@@ -1,14 +1,18 @@
 body {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   }
 
-h1, h2, h3, h4,h6 {
+h1, h2, h4,h6 {
   font-weight: 800;
 }
 
-h2{
+h2, h3{
   letter-spacing: .3rem;
+  }
+
+  h3{
+    line-height: 200%;
   }
 
 h5{
@@ -17,8 +21,7 @@ h5{
 
 p {
 font-family: 'Ubuntu', sans-serif;
-  color: #355070;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /* Heading  */
@@ -130,7 +133,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 #portfolio .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 3% 18% 7%;
 }
 
 /* Contact */
@@ -169,13 +172,25 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 /* overriding the next two items - original code is 0n bootstrap*/
+.btn-outline-dark {
+  color: #F67280;
+  border-color: #F67280;
+}
 
 .btn-outline-dark:hover {
-  background-color: #355070;
-  border-color: #355070;
+  background-color: #F67280;
+  border-color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
-  
+
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #F67280;
+
+}
+
+.a-footer:hover{
+  color: #F67280;
 }

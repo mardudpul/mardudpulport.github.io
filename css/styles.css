@@ -1,28 +1,30 @@
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inclusive Sans', sans-serif;
   text-align: center;
   }
 
-h1, h2, h4,h6 {
-  font-weight: 800;
-}
-
-h2, h3{
-  letter-spacing: .3rem;
+  h2 {
+    line-height: 150%;
   }
 
-  h3{
+h1, h3, h4 {
+  font-weight: 600;
+}
+
+h3{
     line-height: 200%;
+    color: #355070;
   }
 
-h5{
-    font-weight: 700
-}
 
 p {
-font-family: 'Ubuntu', sans-serif;
+font-family: 'Inclusive Sans', sans-serif;
   font-size: 1.4rem;
-  color: black;
+  color: #355070;
+}
+
+li {
+  color: #F67280;
 }
 
 /* Heading  */
@@ -30,6 +32,7 @@ font-family: 'Ubuntu', sans-serif;
   letter-spacing: .5rem;
   font-size: 2.5rem;
   line-height: 1.5;
+  font-family: 'patrick hand', cursive;
 }
 
 @-webkit-keyframes big-heading {
@@ -62,7 +65,7 @@ font-family: 'Ubuntu', sans-serif;
 /* containers */
 /* CONTAINER-FLUID will help us to avoid letters jumping when the screen is gettin small or larger. We took all the fisrt secction inside this container */
 .container-fluid {
-  padding: 7% 15%;
+  padding: 3% 15%;
 }
 
 /* Navigation bar */
@@ -103,12 +106,18 @@ font-family: 'Ubuntu', sans-serif;
 
 
 /* Features section */
+
+/* Align left  */
+.align-left-skills{
+  text-align: left;
+  }
+
+.bullet-points{
+  aligne: lefts;
+  }
+
 #about-me {
   position: relative;
-}
-
-.features-h3 {
-  font-size: 1.5rem;
 }
 
 .icon-features {
@@ -121,7 +130,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .icon-div {
-  padding: 12px 21px 12px;
+  padding: 40px 21px 12px;
 }
 
 /* Portfolio */
@@ -145,7 +154,6 @@ font-family: 'Ubuntu', sans-serif;
 
 .contact-text{
   color: 00000;
-  letter-spacing: .5rem;
   padding-bottom: 3%;
 }
 

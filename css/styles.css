@@ -14,12 +14,13 @@ h1, h3, h4 {
 h3{
     line-height: 200%;
     color: #355070;
+    font-size: 1.8rem;
   }
 
 
 p {
 font-family: 'Inclusive Sans', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #355070;
 }
 
@@ -86,7 +87,7 @@ li {
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }

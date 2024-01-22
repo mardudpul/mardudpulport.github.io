@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
   <!-- Hotjar Tracking Code for my site -->
   <script>
     (function(h, o, t, j, a, r) {
@@ -83,27 +82,35 @@
     <!-- Home -->
     <div class="container-fluid">
       <div id="home">
-        <img class="profile-pic" src="images.projects/Mariana_Picture_Border-darkbackground.png" alt="profile-pic">
-        <h1 class="big-heading">I'm Mariana</h1>
-        <h2>Web & UX Design Student <br> Wife, Mother of Emma & Elena
-          <br>Swimmer</br></br>
+        <img class="profile-pic" src="images.projects/Mariana.png" alt="profile-pic">
+        <h1 class="big-heading" id=typewriter-text>I'm Mariana</h1>
+        <h2>Web & UX Design Student
+
+          <!-- Modal GIF video fam starts here -->
+          <br>Wife, Mother of Emma & Elena <span id="openModal" class="btn btn-outline-dark btn-contact btn-heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
+
+          <div id="gifModal">
+            <span id="closeModal">&times;</span>
+            <img src="images.projects/Fam-video-website.gif" alt="My fam video gif" style="width: 100%; height: 100%;">
+          </div>
+
+          <!-- Overlay to darken the background when the modal is open -->
+          <div id="overlay"></div>
+
+          <br>Swimmer
         </h2>
         <a style="font-family:'Montserrat-Light', sans-serif;" class="btn btn-outline-dark btn-contact" href="#portfolio">Portfolio</a>
       </div>
   </section>
 
-
-  <!-- Features -->
+    <!-- Features -->
 
   <section class="white-section" id="about-me">
-
     <div class="container-fluid">
-
       <div class="row">
         <div class="text-center icon-div">
           <i class="icon-features fas fa-5x fa-users"></i>
           <h3>User Research</h3>
-
           <div class="align-left-skills">
             <ul>
               <li class="bullet-points">
@@ -172,7 +179,7 @@
   <!-- Portfolio UX desing-->
 
   <section class="color-section" id="portfolio">
-    <h1 class="section-heading">UX Desing & Research</h1>
+    <h1 class="section-heading">UX Design & Research</h1>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid">
@@ -208,15 +215,14 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
 
   </section>
 
 
-  <!-- Portfolio Web Develop - carrousel no working!!!!! -->
-  <section class="color-section" id="portfolio">
-    <h1 class="section-heading">HTML & CSS work</h1>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+  <!-- Portfolio Web Develop - carrousel no working right!!!!! -->
+  <section class="color-section" id="portfolio-coding">
+    <h1 class="section-heading">Coding</h1>
+    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid">
           <div class="card d-block w-100">
@@ -230,47 +236,45 @@
               </div>
             </div>
           </div>
+        </div>
 
-
-          <div class="carousel-item container-fluid">
-            <div class="card d-block w-100">
-              <div class="card-body">
-                <h3 class="card-title" style="color:#355070">My site</h3>
-                <a href="https://mardudpul.github.io/CSS-my-site/" class="car-btn btn btn-outline-dark">Project Link</a>
-                <p class="card-text">Project for Udemy class with HTML & CSS</p>
-                <img src="Screenshots-portafolio\My-site-website.PNG" class="card-img-top" alt="Home page wordpress">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item container-fluid">
-            <div class="card d-block w-100">
-              <div class="card-body">
-                <h3 class="card-title" style="color:#355070">TinDog</h3>
-                <a href="https://mardudpul.github.io/TinDog-Start-master/" class="car-btn btn btn-outline-dark">Project Link</a>
-                <p class="card-text">Project for Udemy class with HTML, CSS & Bootstrap</p>
-                <img src="Screenshots-portafolio\TingDog website.PNG" class="card-img-top" alt="Home page wordpress">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item container-fluid">
-            <div class="card d-block w-100">
-              <div class="card-body">
-                <h3 class="card-title" style="color:#355070">Mar-Swim swimming lessons</h3>
-                <p class="card-text">Personal web page made with WordPress (no longer online) </p>
-                <img src="Screenshots-portafolio/wrord-press-homepage.PNG" class="card-img-top" alt="Home page wordpress">
-                <!-- <a href="#" class="btn btn-outline-dark">Screenshots Link</a> -->
-              </div>
+        <div class="carousel-item container-fluid">
+          <div class="card d-block w-100">
+            <div class="card-body">
+              <h3 class="card-title" style="color:#355070">My site</h3>
+              <a href="https://mardudpul.github.io/CSS-my-site/" class="car-btn btn btn-outline-dark">Project Link</a>
+              <p class="card-text">Project for Udemy class with HTML & CSS</p>
+              <img src="Screenshots-portafolio\My-site-website.PNG" class="card-img-top" alt="Home page wordpress">
             </div>
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <div class="carousel-item container-fluid">
+          <div class="card d-block w-100">
+            <div class="card-body">
+              <h3 class="card-title" style="color:#355070">TinDog</h3>
+              <a href="https://mardudpul.github.io/TinDog-Start-master/" class="car-btn btn btn-outline-dark">Project Link</a>
+              <p class="card-text">Project for Udemy class with HTML, CSS & Bootstrap</p>
+              <img src="Screenshots-portafolio\TingDog website.PNG" class="card-img-top" alt="Home page wordpress">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <div class="card d-block w-100">
+            <div class="card-body">
+              <h3 class="card-title" style="color:#355070">Mar-Swim swimming lessons</h3>
+              <p class="card-text">Personal web page made with WordPress (no longer online) </p>
+              <img src="Screenshots-portafolio/wrord-press-homepage.PNG" class="card-img-top" alt="Home page wordpress">
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -278,14 +282,15 @@
     </div>
 
   </section>
+  <!-- <a href="#" class="btn btn-outline-dark">Screenshots Link</a> -->
 
   <!-- Contact -->
 
   <section class="white-section" id="contact">
     <div class="container-fluid">
       <h3 class="contact-text">Let's connect!</h3>
-      <a style="font-family:'Montserrat-Light', sans-serif;" class="btn btn-outline-dark btn-contact" href="mailto:marpulgarind@gmail.com">Email</a>
-      <a style="font-family:'Montserrat-Light', sans-serif;" class="btn btn-outline-dark btn-contact" href="https://www.linkedin.com/in/mariana-pulgarin-vergara-aa64b592/">Linkedin</a>
+      <a class="btn btn-outline-dark btn-contact" href="mailto:marpulgarind@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+      <a class="btn btn-outline-dark btn-contact" href="https://www.linkedin.com/in/mariana-pulgarin-vergara-aa64b592/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
     </div>
   </section>
 
@@ -305,6 +310,7 @@
     2022 Mariana Pulgarin <sup>®</sup>
   </footer>
 
+  <script src="scripts\main.js"></script>
 
 </body>
 

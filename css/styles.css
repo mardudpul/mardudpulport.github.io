@@ -115,7 +115,7 @@ letter-spacing: .15em;
 /* Section */
 .color-section {
   background-color: #355070;
-  background-image: linear-gradient(to right, #F8CDDA, #355070);
+  background-image: linear-gradient(to right, #355070, #F8CDDA);
   color: #fff;
 }
 

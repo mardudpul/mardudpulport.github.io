@@ -3,40 +3,48 @@ body {
   text-align: center;
 }
 
-h2 {
-  line-height: 150%;
+h1{
+  font-weight: 800;
+  font-size: 2.8rem;
 }
 
-h1, h4 {
+h2 {
+  line-height: 200%;
+  font-size: 2rem;
   font-weight: 600;
 }
 
-h3 {
-  font-family: 'Rubik Mono One', monospace;
+h3{
   line-height: 200%;
-  color: #355070;
   font-size: 1.8rem;
+  font-weight: 500;
 }
 
 p {
-  font-family: 'Inclusive Sans', sans-serif;
-  font-size: 1.6rem;
-  color: #355070;
-}
-
-li {
-  color: #F67280;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 300;
 }
 
 
 /* Heading  */
+/* big-heading is for the Mariana Pulgarin typewrite effect */
 .big-heading {
   letter-spacing: .5rem;
   font-size: 2.5rem;
   line-height: 1.5;
-  font-family: 'Rubik Mono One', monospace;
 }
 
+.arrow-link{
+  width: 60px;
+  height: 60px;
+}
+
+.arrow-link:hover{
+  width: 65px;
+  height: 65px;
+}
 
 /* NOTE: I want to try to do typewrite effect for my name in the homepage, but it doesn't work in static mode */
 
@@ -106,22 +114,21 @@ letter-spacing: .15em;
   }
 }
 
-.section-heading {
+/* I don't need this part anymore */
+/* .section-heading {
   font-size: 3rem;
   line-height: 1.5;
   padding-top: 3%;
-}
+} */
 
-/* Section */
-.color-section {
-  background-color: #355070;
-  background-image: linear-gradient(to right, #355070, #F8CDDA);
-  color: #fff;
+/* Sections Black & White section for right now */
+.black-section {
+  background-color: black;
+  color: white;
 }
 
 .white-section {
-  background-color: #A9E4D7;
-  background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
+  background-color: lightgrey;
   color: black;
 }
 
@@ -139,9 +146,9 @@ letter-spacing: .15em;
 }
 
 .navbar-brand {
-  font-family: 'Inclusive Sans', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
+  text-align: left;
 }
 
 .nav-item {
@@ -149,9 +156,8 @@ letter-spacing: .15em;
 }
 
 .nav-link {
-  font-size: 1.4rem;
-  font-family: 'Inclusive Sans', sans-serif;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 /* Tittle section */
@@ -160,50 +166,61 @@ letter-spacing: .15em;
   text-align: center;
 }
 
-.profile-pic {
+/* No needed for the moment */
+/* .profile-pic {
   padding-bottom: 3%;
   width: 30%;
   height: 30%;
+} */
+
+
+/* portfolio-cards section */
+
+#portfolio-cards{
+  padding: 30px;
 }
 
-/* Features section */
-/* Align left  */
-.align-left-skills {
-  text-align: left;
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 50px;
+  margin-top: -18px;
+  list-style: none;
 }
 
-.bullet-points {
-  aligne: lefts;
+.flex-item {
+  background: white; /* Background color */
+  padding: 5px; /* Padding */
+  width: 300px; /* Width of items */
+  height: 450px; /* Height of items */
+  margin-top: 30px; /* Top margin */
+  line-height: 150px; /* Center text vertically */
+  color: black; /* Text color */
+  font-weight: none; /* Bold text */
+  text-align: center; /* Center text */
+  box-shadow: 20px 20px 50px grey;
+  border-radius: 9px;
 }
 
-#about-me {
-  position: relative;
+.flex-container img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.icon-features {
-  color: #355070;
-  margin-bottom: 1rem;
-}
-
-.icon-features:hover {
-  color: #355070;
-}
-
-.icon-div {
-  padding: 40px 21px 12px;
-}
-
-/* Portfolio */
-.card-tittle {
-  color: #63B4B8;
-}
-
-.car-btn {
-  font-family: 'Inclusive Sans', sans-serif;
-}
 
 #portfolio .container-fluid {
   padding: 3% 18% 7%;
+}
+
+
+/* About me section */
+#about {
+  position: relative;
+  text-align: left;
+  line-height: 1.8;
 }
 
 /* Contact */
@@ -211,27 +228,34 @@ letter-spacing: .15em;
   padding: 4% 15%;
 }
 
-.contact-text {
-  color: 00000;
-  /* padding-bottom: 3%; - I think looks better without the padding */
+/* footer link is the email and the linkedIn links */
+.footer-link{
+  margin: 20px;
+  color: white;
 }
 
-.contact-btn {
-  color: #355070;
+.footer-link:hover{
+  color: pink;
 }
 
-.btn-heart{
+aside{
+  padding: 20px;
+  text-align: center;
+}
+
+/* No need yet */
+/* .btn-heart{
   border-radius: 25px;
-}
+} */
 
-/* Footer */
+/* Footer last part of the page */
 #footer {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-top: 1%;
 }
 
 .a-footer {
-  color: #FFF;
+  color: black;
   text-decoration: none;
   padding: 1% 1%;
 }
@@ -243,7 +267,7 @@ letter-spacing: .15em;
 
 /* overriding the next two items - original code is 0n bootstrap*/
 .btn-outline-dark {
-  color: #F67280;
+  color: pink;
   font-size: 20px;
   border-color: #F67280;
   background-color: black;
@@ -259,9 +283,14 @@ letter-spacing: .15em;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #F67280;
+  color: pink;
 }
 
 .a-footer:hover {
   color: #F67280;
+}
+
+.btn{
+  border: 1.5px;
+  border-radius: 10px;
 }

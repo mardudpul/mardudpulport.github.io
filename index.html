@@ -6,7 +6,7 @@
 
   <meta charset="utf-8">
   <title>Mariana Pulgarin</title>
-  <link rel="icon" type="image/x-icon" href="images.projects/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="images.projects/favicon-32x32.png">
 
   <!-- CSS Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -17,11 +17,11 @@
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Cabin+Sketch&family=Rock+Salt&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Cabin+Sketch&family=Rock+Salt&family=Rubik+Mono+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Cabin+Sketch&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Cabin+Sketch&family=Rock+Salt&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -38,6 +38,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome kit no CDN, no sure if will work -->
   <script src="https://kit.fontawesome.com/ef9821e07e.js" crossorigin="anonymous"></script>
@@ -46,9 +49,10 @@
 
 <body>
 
-  <section class="color-section" id="tittle">
+  <section class="black-section" id="tittle">
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark d-flex center">
+      <a class="navbar-brand flex-grow-1 ps-2" href="">MP</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,13 +63,10 @@
             <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-me">Skills</a>
+            <a class="nav-link" href="#portfolio-cards">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
         </ul>
       </div>
@@ -81,9 +82,14 @@
     <div class="container-fluid">
       <div id="home">
         <!-- <img class="profile-pic" src="images.projects/Mariana.png" alt="profile-pic"> -->
-        <!-- <h1 class="big-heading" id=typewriter-text>I'm Mariana</h1> -->
-        <h1>Hola, I'm Mariana</h1>
-        <p style="color:white;">Aspiring Web & UX Designer
+        <h1 class="big-heading" id=typewriter-text>I'm Mariana Pulgarin </h1>
+        <p style="color:white;">Aspiring Web & UX Designer <br />
+          With HTML & CSS Foundations <br /> Connecting, Listening, Understanding People!
+          <br />
+          &zwj;
+          <br />
+          <a href="#portfolio-cards"><img class="arrow-link" src="images.projects/icons8-arrow-down-50.png" alt="arrow-down-link" /></a>
+
 
           <!-- Modal GIF video fam starts here -->
           <!-- <br>Wife, Mother of Emma & Elena <span id="openModal" class="btn btn-outline-dark btn-contact btn-heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
@@ -98,86 +104,33 @@
 
           <br>Swimmer -->
         </p>
-        <a style="font-family:'Montserrat-Light', sans-serif;" class="btn btn-outline-dark btn-contact" href="#portfolio">Portfolio</a>
+        <!-- <a style="font-family:'Montserrat-Light', sans-serif;" class="btn btn-outline-dark btn-contact" href="#portfolio">Portfolio</a> -->
       </div>
   </section>
 
-  <!-- Features -->
+  <!-- New Section- Cards for Portfolio -->
 
-  <section class="white-section" id="about-me">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="text-center icon-div">
-          <i class="icon-features fas fa-5x fa-users"></i>
-          <h3>User Research</h3>
-          <div class="align-left-skills">
-            <ul>
-              <li class="bullet-points">
-                <p>Creating user personas, journey maps, user stories</p>
-              </li>
-              <li>
-                <p>Conducting competitive audits for comprehensive insights</p>
-              </li>
-              <li>
-                <p>Creating interactive prototypes ranging from low-fidelity to high-fidelity</p>
-              </li>
-              <li>
-                <p>Conducting usability testing methods, including moderated and unmoderated sessions, preference testing, surveys, and heatmap analysis</p>
-              </li>
-            </ul>
-          </div>
+  <section class="white-section" id='portfolio-cards'>
+    <h2>Portfolio</h2>
+    <ul class="flex-container">
+      <li class="flex-item">
+        <h3>UX Design</h3><img src="images.projects/HG-picture-befaf.png" alt="Phone application picture prototype" /><a class="btn btn-outline-dark " href="#">Learn more</a>
+      </li>
+      <li class="flex-item">
+        <h3>Graphic Design</h3><img src="images.projects/logo-LPT.png" alt="logo bear" /><a class="btn btn-outline-dark" href="#">Learn more</a>
+      </li>
+      <li class="flex-item">
+        <h3>Front End Code</h3><img src="Screenshots-portafolio/Order-summary-card.PNG" /><a class="btn btn-outline-dark" href="#">Learn more</a>
+      </li>
+    </ul>
 
-        </div>
-        <div class="text-center icon-div">
-          <i class="icon-features fas fa-5x fa-palette"></i>
 
-          <h3>User Interface</h3>
-        </div>
-        <div class="align-left-skills">
-          <ul>
-            <li class="bullet-points">
-              <p>Proficient in Figma, Adobe Illustrator and HTML and CSS</p>
-            </li>
-            <li>
-              <p>Consistently thinking creatively to solve design challenges</p>
-            </li>
-            <li>
-              <p>Prioritizing accessibility in the design process</p>
-            </li>
-            <li>
-              <p>Employing Crazy 8 ideation method</p>
-            </li>
-          </ul>
-        </div>
 
-        <div class="text-center icon-div">
-          <i class="icon-features fas fa-5x fa-sticky-note"></i>
-          <h3>Interpersonal Skills</h3>
-        </div>
-        <div class="align-left-skills">
-          <ul>
-            <li class="bullet-points">
-              <p>Collaborating effectively with teams and stakeholders</p>
-            </li>
-            <li>
-              <p>Advocating for user interests throughout the design process</p>
-            </li>
-            <li>
-              <p>Working closely with cross-functional teams, sharing insights, and integrating feedback into design work</p>
-            </li>
-            <li>
-              <p>Identifying challenges, and creating innovative solutions that enhance user experience</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </section>
-
 
   <!-- Portfolio UX desing-->
 
-  <section class="color-section" id="portfolio">
+  <!-- <section class="white-section" id="portfolio">
     <h1 class="section-heading">UX Design & Research</h1>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
@@ -219,7 +172,7 @@
 
 
   <!-- Portfolio Web Develop - carrousel no working right!!!!! -->
-  <section class="color-section" id="portfolio-coding">
+  <!-- <section class="white-section" id="portfolio-coding">
     <h1 class="section-heading">Coding</h1>
     <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
@@ -278,34 +231,52 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </div> -->
 
-  </section>
+  <!-- </section> -->
   <!-- <a href="#" class="btn btn-outline-dark">Screenshots Link</a> -->
 
-  <!-- Contact -->
+  <!-- About me -->
 
-  <section class="white-section" id="contact">
+  <section class="black-section" id="about">
     <div class="container-fluid">
-      <h3 class="contact-text">Let's connect!</h3>
-      <a class="btn btn-outline-dark btn-contact" href="mailto:marpulgarind@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-      <a class="btn btn-outline-dark btn-contact" href="https://www.linkedin.com/in/mariana-pulgarin-vergara-aa64b592/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <h2>A little more about me!</h2>
+      <p>
+        I love to listen to a good story, and sometimes not so good ones, but one of the most
+        important values for me since I was a kid was listening to others. I'm passionate about UX because as a designer
+        I can do that, listen and understand humans! and I can improve peoples' lives through products (digital or tangibles). It can't get better than that!
+        <br />
+        &zwj;
+        <br />
+        I live in Raleigh, North Carolina with my three favorite people in my world; my husband and two daughters. When I'm not with them or studying, I'm in the
+        swimming pool, adding up some miles for my open waters.
+      </p>
     </div>
+
+    <aside>
+      <h3>Let's connect!</h3>
+      <p>
+        I would love to hear from you.
+      </p>
+      <a class="footer-link" href="mailto:mpulgarin@my.waketech.edu"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+      <a class="footer-link" href="https://www.linkedin.com/in/mariana-pulgarin-vergara-aa64b592/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+    </aside>
+
   </section>
 
 
   <!-- Footer -->
 
-  <footer class="color-section" id="footer" style="font-size:1.2rem; padding: 2rem 0;">
+  <footer class="white-section" id="footer" style="font-size:1.2rem; padding: 2rem 0;">
     <div>
       <a class="a-footer" href="#home">Home</a>
-      <span>·</span>
-      <a class="a-footer" href="#about-me">Skills</a>
       <span>·</span>
       <a class="a-footer" href="#portfolio">Portfolio</a>
       <span>·</span>
       <a class="a-footer" href="https://github.com/mardudpul">GitHub</a>
     </div>
+    Icons by <a href="https://icons8.com/">Icons8</a>
+    <br/>
     2022 Mariana Pulgarin <sup>®</sup>
   </footer>
 

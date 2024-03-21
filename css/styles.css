@@ -3,7 +3,7 @@ body {
   text-align: center;
 }
 
-h1{
+h1 {
   font-weight: 800;
   font-size: 2.8rem;
 }
@@ -14,7 +14,7 @@ h2 {
   font-weight: 600;
 }
 
-h3{
+h3 {
   line-height: 200%;
   font-size: 1.8rem;
   font-weight: 500;
@@ -23,7 +23,6 @@ h3{
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
-  color: white;
   font-weight: 300;
 }
 
@@ -36,12 +35,12 @@ p {
   line-height: 1.5;
 }
 
-.arrow-link{
+.arrow-link {
   width: 60px;
   height: 60px;
 }
 
-.arrow-link:hover{
+.arrow-link:hover {
   width: 65px;
   height: 65px;
 }
@@ -52,13 +51,14 @@ p {
   white-space: nowrap;
   overflow: hidden;
   /* border-right: 2px solid #000;  cursor effect that Idon't like */
- margin: 0 auto;
-letter-spacing: .15em;
+  margin: 0 auto;
+  letter-spacing: .15em;
   animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
- @keyframes typing {
+
+@keyframes typing {
   from {
     width: 0;
   }
@@ -114,13 +114,6 @@ letter-spacing: .15em;
   }
 }
 
-/* I don't need this part anymore */
-/* .section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
-  padding-top: 3%;
-} */
-
 /* Sections Black & White section for right now */
 .black-section {
   background-color: black;
@@ -132,8 +125,8 @@ letter-spacing: .15em;
   color: black;
 }
 
-/* containers */
-/* CONTAINER-FLUID will help us to avoid letters jumping when the screen is gettin small or larger. We took all the fisrt secction inside this container */
+/* CONTAINER-FLUID will help us to avoid letters jumping when the screen is getting small or larger. */
+/* We took all the first section inside this container */
 .container-fluid {
   padding: 3% 15%;
 }
@@ -160,27 +153,17 @@ letter-spacing: .15em;
   font-weight: 400;
 }
 
-/* Tittle section */
 #tittle .container-fluid {
   padding: 3% 15% 7%;
   text-align: center;
 }
 
-/* No needed for the moment */
-/* .profile-pic {
-  padding-bottom: 3%;
-  width: 30%;
-  height: 30%;
-} */
-
-
 /* portfolio-cards section */
-
-#portfolio-cards{
+#portfolio-cards {
   padding: 30px;
 }
 
-.flex-container{
+.cards-flex-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -190,26 +173,31 @@ letter-spacing: .15em;
   list-style: none;
 }
 
-.flex-item {
-  background: white; /* Background color */
-  padding: 5px; /* Padding */
-  width: 300px; /* Width of items */
-  height: 450px; /* Height of items */
-  margin-top: 30px; /* Top margin */
-  line-height: 150px; /* Center text vertically */
-  color: black; /* Text color */
-  font-weight: none; /* Bold text */
-  text-align: center; /* Center text */
-  box-shadow: 20px 20px 50px grey;
-  border-radius: 9px;
-}
-
-.flex-container img{
+.cards-flex-container img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+.card-flex-item {
+  background: white;
+  padding: 5px;
+  width: 300px;
+  height: 450px;
+  margin-top: 30px;
+  line-height: 150px;
+  color: black;
+  font-weight: none;
+  text-align: center;
+  box-shadow: 20px 20px 50px grey;
+  border-radius: 9px;
+}
+
+.card-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 #portfolio .container-fluid {
   padding: 3% 18% 7%;
@@ -229,16 +217,16 @@ letter-spacing: .15em;
 }
 
 /* footer link is the email and the linkedIn links */
-.footer-link{
+.footer-link {
   margin: 20px;
   color: white;
 }
 
-.footer-link:hover{
+.footer-link:hover {
   color: pink;
 }
 
-aside{
+aside {
   padding: 20px;
   text-align: center;
 }
@@ -290,7 +278,7 @@ aside{
   color: #F67280;
 }
 
-.btn{
+.btn {
   border: 1.5px;
   border-radius: 10px;
 }

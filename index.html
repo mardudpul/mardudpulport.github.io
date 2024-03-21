@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Mariana Pulgarin</title>
@@ -55,7 +56,7 @@
 
   <!-- Font Awesome kit no CDN -->
   <script src="https://kit.fontawesome.com/ef9821e07e.js" crossorigin="anonymous"></script>
-  
+
   <!-- Alpine logic -->
   <script defer src="scripts/alpine-logic.js"></script>
 
@@ -67,32 +68,27 @@
   <section x-data class="black-section" id="tittle">
     <nav class="navbar navbar-expand-lg navbar-dark d-flex center">
       <a class="navbar-brand flex-grow-1 ps-2" href="">MP</a>
-      <button 
-        x-show="$store.pages.mainContentOpen" 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo01" 
-        aria-controls="navbarTogglerDemo01" 
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- inline style overriding Bootstrap default flex-grow:1 -->
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="flex-grow:0">
-        <ul class="navbar-nav d-flex justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio-cards">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-        </ul>
-      </div>
+      <section x-show="$store.pages.mainContentOpen">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- inline style overriding Bootstrap default flex-grow:1 -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="flex-grow:0">
+          <ul class="navbar-nav d-flex justify-content-end">
+            <li class="nav-item">
+              <!-- this link doesn't really make sense since to only scrolls down a bit - might consider making it sticky -->
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio-cards">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </nav>
   </section>
 
@@ -117,8 +113,8 @@
     <!-- cards for Portfolio -->
     <section class="white-section" id='portfolio-cards'>
       <h2>Portfolio</h2>
-      <ul class="flex-container">
-        <li class="flex-item">
+      <ul class="cards-flex-container">
+        <li class="card-flex-item card-flex-container">
           <h3>UX Design</h3>
           <img src="assets/HG-picture-befaf.png" alt="Phone application picture prototype" />
           <a class="btn btn-outline-dark" @click="
@@ -126,20 +122,19 @@
                 $store.pages.projectOneOpen = true
               " href="#">Learn more</a>
         </li>
-        <li class="flex-item">
+        <li class="card-flex-item card-flex-container">
           <h3>Graphic Design</h3>
           <img src="assets/logo-LPT.png" alt="logo bear" />
           <a class="btn btn-outline-dark" @click="
                 $store.pages.mainContentOpen = false
-                $store.pages.projectOneOpen = true
-              " href="#">Learn more</a>
+                $store.pages.projectTwoOpen = true" href="#">Learn more</a>
         </li>
-        <li class="flex-item">
+        <li class="card-flex-item card-flex-container">
           <h3>Front End Code</h3>
           <img src="assets/Order-summary-card.PNG" />
           <a class="btn btn-outline-dark" @click="
                 $store.pages.mainContentOpen = false
-                $store.pages.projectOneOpen = true
+                $store.pages.projectThreeOpen = true
               " href="#">Learn more</a>
         </li>
       </ul>
@@ -198,31 +193,203 @@
 
   <!-- project one start -->
   <div x-data x-show="$store.pages.projectOneOpen">
-    PROJECT ONE
+    <header>
+      <h1>UX/UI Project Title</h1>
+      <p>A brief introduction to the project, including its goals, target audience, and challenges.</p>
+    </header>
+
+    <section>
+      <h2>Research and Discovery</h2>
+      <p>Explain the research and discovery phase, where you gathered information about the users, their needs, and pain
+        points.</p>
+    </section>
+
+    <section>
+      <h2>User Personas and User Journeys</h2>
+      <p>Discuss how you created user personas to represent the target audience and user journeys to map out their
+        experiences.</p>
+    </section>
+
+    <section>
+      <h2>Information Architecture</h2>
+      <p>Describe how you organized and structured the information in the project.</p>
+    </section>
+
+    <section>
+      <h2>Design Process</h2>
+      <p>Walk through your design process, including sketches, wireframes, prototypes, and final visual designs.</p>
+    </section>
+
+    <section>
+      <h2>Usability Testing</h2>
+      <p>Discuss any usability testing you conducted, including the methods used, the findings, and how you incorporated
+        the feedback into your designs.</p>
+    </section>
+
+    <section>
+      <h2>Visual Design</h2>
+      <p>Showcase your visual design skills by highlighting your use of typography, color, imagery, and other design
+        elements.</p>
+    </section>
+
+    <section>
+      <h2>Accessibility and Inclusivity</h2>
+      <p>Explain how you considered accessibility and inclusivity in your design process.</p>
+    </section>
+
+    <section>
+      <h2>Collaboration and Communication</h2>
+      <p>Mention any collaboration with developers, stakeholders, or other team members, as well as your ability to
+        communicate your design decisions effectively.</p>
+    </section>
+
+    <section>
+      <h2>Impact and Results</h2>
+      <p>Conclude by discussing the impact of your work, such as improved user satisfaction, increased conversion rates,
+        or positive feedback from stakeholders.</p>
+    </section>
+
     <a class="btn btn-outline-dark" @click="$store.pages.mainContentOpen = true; $store.pages.projectOneOpen = false;"
       href="#">
-      Learn more
+      Return Home
     </a>
   </div>
   <!-- project one end -->
 
-  <!--  -->
+  <!-- project two start -->
   <div x-data x-show="$store.pages.projectTwoOpen">
-    PROJECT TWO
+    <header>
+      <h1>Graphic Design Project</h1>
+      <p>A brief introduction to the project, including its goals, target audience, and challenges.</p>
+    </header>
+
+    <section>
+      <h2>Project Brief</h2>
+      <p>Describe the project's objectives, requirements, and any constraints you had to work within.</p>
+    </section>
+
+    <section>
+      <h2>Concept Development</h2>
+      <p>Explain how you developed the initial concepts for the project, including brainstorming, sketching, and mood
+        boards.</p>
+    </section>
+
+    <section>
+      <h2>Design Process</h2>
+      <p>Walk through your design process, including the tools and techniques you used to create the final designs.</p>
+    </section>
+
+    <section>
+      <h2>Visual Elements</h2>
+      <p>Discuss the visual elements used in your design, such as typography, color, imagery, and composition.</p>
+    </section>
+
+    <section>
+      <h2>Design Iterations</h2>
+      <p>Show how you refined your designs based on feedback, including any revisions or alternative versions you
+        created.</p>
+    </section>
+
+    <section>
+      <h2>Final Designs</h2>
+      <div class="image-gallery">
+        <!-- Add your final design images here -->
+        <img src="path/to/final-design-1.jpg" alt="Final Design 1">
+        <img src="path/to/final-design-2.jpg" alt="Final Design 2">
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <section>
+      <h2>Project Impact</h2>
+      <p>Describe the impact of your work, such as improved brand recognition, increased engagement, or positive
+        feedback from clients.</p>
+    </section>
+
+    <section>
+      <h2>Lessons Learned</h2>
+      <p>Reflect on what you learned from the project and how it has influenced your design approach.</p>
+    </section>
+
     <a class="btn btn-outline-dark" @click="$store.pages.mainContentOpen = true; $store.pages.projectTwoOpen = false;"
       href="#">
-      Learn more
+      Return home
     </a>
   </div>
+  <!-- project two end -->
 
-
+  <!-- project three start -->
   <div x-data x-show="$store.pages.projectThreeOpen">
-    PROJECT THREE
+    <header>
+      <h1>Front End Project Title</h1>
+      <p>A brief introduction to the project, including its goals, target audience, and challenges.</p>
+    </header>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>Describe the purpose and scope of the project, along with any specific technologies or frameworks used.</p>
+    </section>
+
+    <section>
+      <h2>Design Process</h2>
+      <p>Walk through your design process, including wireframes, mockups, and prototypes created during the project.</p>
+    </section>
+
+    <section>
+      <h2>Development Process</h2>
+      <p>Explain your development process, including coding standards, version control, and any collaboration tools
+        used.</p>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>List the key features of your project, such as responsive design, performance optimizations, or
+          accessibility considerations.</li>
+        <!-- Add more list items as needed -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>List the technologies, libraries, and frameworks used in the project, such as HTML, CSS, JavaScript, React,
+          or Vue.</li>
+        <!-- Add more list items as needed -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo and Source Code</h2>
+      <p>
+        <a href="https://your-live-demo-url.com" target="_blank">View Live Demo</a>
+        |
+        <a href="https://github.com/your-username/your-repo" target="_blank">View Source Code</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Challenges and Solutions</h2>
+      <p>Discuss any challenges you faced during the project and the solutions you implemented to overcome them.</p>
+    </section>
+
+    <section>
+      <h2>Project Impact</h2>
+      <p>Describe the impact of your work, such as improved user experience, increased performance, or positive feedback
+        from clients or users.</p>
+    </section>
+
+    <section>
+      <h2>Lessons Learned</h2>
+      <p>Reflect on what you learned from the project and how it has influenced your development approach.</p>
+    </section>
+
     <a class="btn btn-outline-dark" @click="$store.pages.mainContentOpen = true; $store.pages.projectThreeOpen = false;"
       href="#">
-      Learn more
+      Return home
     </a>
   </div>
+  <!-- project three end -->
 </body>
 
 </html>
